@@ -3,7 +3,7 @@ import React from "react";
 const Partnership = () => {
   return (
     <>
-      <div>
+      <div className="px-3">
         <h1 className="text-xl font-semibold bg-[#E7E7FF] rounded p-3">
           Partnership
         </h1>

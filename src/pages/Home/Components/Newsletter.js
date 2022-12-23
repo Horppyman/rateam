@@ -10,15 +10,15 @@ const Newsletter = () => {
       </div>
 
       <form action="" className="md:flex justify-center items-center">
-        <div className="flex space-x-5">
+        <div className="flex flex-col md:flex-row">
           <input
             type="text"
-            className=" h-[55px] outline-none p-3 w-[500px] border  border-gray-300"
+            className=" h-[55px] outline-none p-3 md:w-[500px] border  border-gray-300"
             placeholder="Email"
           />
           <button
             type="button"
-            class="text-white bg-[#FF674D] hover:bg-orange-600 font-medium rounded md:text-xl w-44 mr-2 mb-2 h-[55px]"
+            class="text-white mt-5 md:mt-0 w-full bg-[#FF674D] hover:bg-orange-600 font-medium rounded md:text-xl md:w-44 mr-2 mb-2 h-[55px]"
           >
             Subscribe
           </button>

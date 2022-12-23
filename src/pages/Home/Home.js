@@ -10,11 +10,11 @@ import Video from "./Components/Video";
 const Home = () => {
   ScrollToTop();
   return (
-    <>
+    <section className="px-7">
       <section className="container mx-auto mt-5">
         <div className="lg:flex">
           <div className="basis-1/2 px-5 lg:px-0">
-            <h1 className="xl:text-[8rem] text-[4rem] font-bold">
+            <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem]  font-bold">
               Rate & Earn
             </h1>
             <h2 className="lg:text-[4rem] text-[40px] font-light">
@@ -28,7 +28,7 @@ const Home = () => {
             <div className="flex items-center mt-5 px-2">
               <button
                 type="button"
-                class="text-white bg-[#FF674D] hover:bg-orange-600 font-medium rounded text-xl lg:w-44 w-[150px] mr-2 mb-2 lg:h-[55px] h-[45px]"
+                class="text-white bg-[#FF674D]  hover:bg-orange-600 font-medium rounded text-xl lg:w-44 w-[150px] mr-2 mb-2 mt-2 lg:h-[53px] h-[45px]"
               >
                 Get Started
               </button>
@@ -46,7 +46,7 @@ const Home = () => {
       <Numbers />
       <PurplePicture />
       <Newsletter />
-    </>
+    </section>
   );
 };
 

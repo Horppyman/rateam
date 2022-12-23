@@ -19,7 +19,7 @@ const Cards = () => {
   return (
     <section className="container mx-auto">
       {/* first */}
-      <div className="lg:flex items-center p-4">
+      <div className="md:flex items-center space-x-5 p-4">
         <div className="basis-1/2 flex justify-center relative">
           <img
             src={first}
@@ -27,9 +27,9 @@ const Cards = () => {
             className="lg:absolute lg:-bottom-56  p-5 rounded-lg bg-white border shadow"
           />
         </div>
-        <div className="basis-1/2 flex lg:justify-start justify-center mt-5 lg:mt-0">
-          <div className="px-10 lg:px-0">
-            <h1 className="lg:text-[4rem] text-[40px] font-semibold md:pt-5">
+        <div className="basis-1/2 flex md:justify-start justify-center mt-5 md:mt-0">
+          <div className="px-10 md:px-0">
+            <h1 className="md:text-[2rem] lg:text-[4rem] text-[40px] font-semibold md:pt-5">
               Rate Calls And <br /> Earn Points
             </h1>
             <p className="text-xl my-5">Convert Points to Cash</p>
@@ -43,13 +43,13 @@ const Cards = () => {
         </div>
       </div>
       {/* second */}
-      <div className="lg:flex items-center my-8">
+      <div className="md:flex items-center my-8">
         <div className="basis-1/2 order-2 flex justify-center mt-5 px-3 md-px-0">
           <img src={second} alt="" />
         </div>
-        <div className="basis-1/2 order-1 text-right flex  justify-center lg:justify-end">
+        <div className="basis-1/2 order-1 text-right flex  justify-center md:justify-end">
           <div className="px-3">
-            <h1 className="lg:text-[4rem] text-[40px] font-semibold">
+            <h1 className="md:text-[2rem] lg:text-[4rem]  text-[40px] font-semibold">
               Interact with others <br />
               in the community
             </h1>
@@ -66,16 +66,16 @@ const Cards = () => {
         </div>
       </div>
       {/* third */}
-      <div className="lg:flex items-center ">
+      <div className="md:flex items-center my-5 space-x-5">
         <div className="basis-1/2 flex justify-center">
           <img src={third} alt="" />
         </div>
-        <div className="basis-1/2 flex lg:justify-start justify-center mt-5 lg:mt-0">
-          <div className="px-5 lg:px-0">
-            <h1 className="lg:text-[4rem] text-[35px] font-semibold">
+        <div className="basis-1/2 flex md:justify-start justify-center mt-5 md:mt-0">
+          <div className="px-5 md:px-0">
+            <h1 className="md:text-[1.5rem] lg:text-[4rem]  text-[35px] font-semibold">
               Discover Shops, Jobs, <br /> Event & New Places
             </h1>
-            <p className="my-5">
+            <p className="my-5 text-sm">
               Top-ranked businesses for telecom customers with thousands <br />{" "}
               of daily reviews on businesses all in the palm of your hand.
               <br />
@@ -94,13 +94,13 @@ const Cards = () => {
         </div>
       </div>
       {/* fourth */}
-      <div className="lg:flex items-center ">
+      <div className="md:flex items-center my-5 space-x-5">
         <div className="basis-1/2 order-2 flex justify-center">
           <img src={fourth} alt="" />
         </div>
-        <div className="basis-1/2 order-1 flex  justify-center lg:justify-end text-right">
-          <div className="px-5 lg:px-0">
-            <h1 className="lg:text-[4rem] text-[40px] font-semibold">
+        <div className="basis-1/2 order-1 flex  justify-center md:justify-end text-right">
+          <div className="px-5 md:px-0">
+            <h1 className="md:text-[2rem] lg:text-[4rem]  text-[40px] font-semibold">
               Nationwide Network <br />
               Experience
             </h1>

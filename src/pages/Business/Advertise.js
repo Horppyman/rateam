@@ -11,7 +11,7 @@ const Advertise = ({ setNextPage, setRatePage }) => {
     "
     >
       <div className="">
-        <p className="flex items-center text-gray-700 lg:text-xl">
+        <p className="flex items-center text-gray-700 lg:text-xl px-5">
           <span
             onClick={() => {
               setNextPage(false);
@@ -27,25 +27,25 @@ const Advertise = ({ setNextPage, setRatePage }) => {
           </span>{" "}
           Advertise Now, Pay Later (ANPL)
         </p>
-        <h1 className="lg:text-5xl text-2xl font-bold my-6">
+        <h1 className="lg:text-5xl text-2xl font-bold my-6 md:px-5 px-2">
           Advertise Now, Pay Later (ANPL)
         </h1>
       </div>
-      <div className=" my-10 rounded-xl">
+      <div className=" my-10 rounded-xl  md:px-5 px-2">
         <img src={carousel} alt="" className="w-full lg:h-[600px]" />
       </div>
-      <p className="font-medium text-lg">
+      <p className="font-medium text-lg  md:px-5 px-2">
         We're happy to introduce the first ever Advertise Now and Pay Later
         package which
       </p>
-      <ul className="list-decimal text-lg list-inside font-medium my-3">
+      <ul className="list-decimal text-lg list-inside font-medium my-3  md:px-5 px-2">
         <li>Allows users to run their Ads with zero credits</li>
         <li>
           It enables advertisers to re-launch expired campaigns easily and pay
           on their next recharge
         </li>
       </ul>
-      <p className="font-medium text-lg">
+      <p className="font-medium text-lg  md:px-5 px-2">
         The service allows for smooth implementation and uninterrupted marketing
         and advertising plans. <br /> We understand the importance of marketing
         and advertising as the core of consumer goods. Or services. <br />{" "}

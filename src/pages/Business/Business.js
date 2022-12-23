@@ -11,10 +11,10 @@ const Business = () => {
   ScrollToTop();
   return (
     <div
-      className="container mx-auto px-5 lg:px-0
+      className="container mx-auto px-7 lg:px-0
   "
     >
-      <div className="bg-orange-500 my-10 rounded-xl">
+      <div className="bg-orange-500 my-10 rounded-xl mx-5">
         <img src={aboutUs} alt="" className="w-full" />
       </div>
       {!nextPage ? (

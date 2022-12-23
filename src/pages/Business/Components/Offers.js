@@ -5,7 +5,7 @@ import savings from "../../../assets/images/Savings.png";
 const Offers = ({ setNextPage, setRatePage }) => {
   return (
     <>
-      <div>
+      <div className="px-3">
         <h1 className="text-xl font-semibold bg-[#E7E7FF] rounded p-3">
           Offers
         </h1>

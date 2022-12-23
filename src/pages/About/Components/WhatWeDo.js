@@ -5,7 +5,7 @@ import about12 from "../../../assets/images/about12.png";
 const WhatWeDo = () => {
   return (
     <section>
-      <div className="flex  items-center px-5 lg:px-0">
+      <div className="flex  items-center px-5 lg:px-0 md:mx-5 mx-2">
         <h1 className="lg:text-5xl text-2xl flex-shrink-0 ">What We Do?</h1>
         <div className="h-4 w-full bg-gray-300 lg:mx-10 mx-5"></div>
       </div>
