@@ -13,7 +13,7 @@ const Nav = () => {
 
   return (
     <>
-      <nav className="bg-white px-7 py-1 shadow-lg sticky w-full z-20 top-0 left-0 border-b border-gray-200 ">
+      <nav className="bg-white sm:px-7 py-1 shadow-lg sticky w-full z-20 top-0 left-0 border-b border-gray-200 ">
         <div className="container flex items-center justify-between mx-auto">
           <a href="/" className="flex items-center order-2 lg:order-1">
             <img src={logo} className="h-6 mr-3 sm:h-9" alt="" />

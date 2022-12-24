@@ -4,7 +4,7 @@ const Partnership = () => {
   return (
     <>
       <div className="px-3">
-        <h1 className="text-xl font-semibold bg-[#E7E7FF] rounded p-3">
+        <h1 className="md:text-xl text-lg font-semibold bg-[#E7E7FF] rounded p-3">
           Partnership
         </h1>
         <div className="border  shadow-md text-gray-400  px-5 my-5">

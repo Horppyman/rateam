@@ -11,22 +11,24 @@ const Business = () => {
   ScrollToTop();
   return (
     <div
-      className="container mx-auto px-7 lg:px-0
+      className="container mx-auto  lg:px-0
   "
     >
-      <div className="bg-orange-500 my-10 rounded-xl mx-5">
-        <img src={aboutUs} alt="" className="w-full" />
+      <div className="bg-orange-500 my-10 md:rounded-xl mx-2 md:mx-5">
+        <img src={aboutUs} alt="" className="w-full h-16 md:h-auto" />
       </div>
-      {!nextPage ? (
-        <>
-          <Offers setNextPage={setNextPage} setRatePage={setRatePage} />
-          <Partnership />
-        </>
-      ) : ratePage ? (
-        <RateAm setNextPage={setNextPage} setRatePage={setRatePage} />
-      ) : (
-        <Advertise setNextPage={setNextPage} setRatePage={setRatePage} />
-      )}
+      <section className="px-5 lg:px-0">
+        {!nextPage ? (
+          <>
+            <Offers setNextPage={setNextPage} setRatePage={setRatePage} />
+            <Partnership />
+          </>
+        ) : ratePage ? (
+          <RateAm setNextPage={setNextPage} setRatePage={setRatePage} />
+        ) : (
+          <Advertise setNextPage={setNextPage} setRatePage={setRatePage} />
+        )}
+      </section>
       <section className="h-[30rem]"></section>
     </div>
   );

@@ -6,12 +6,12 @@ const Offers = ({ setNextPage, setRatePage }) => {
   return (
     <>
       <div className="px-3">
-        <h1 className="text-xl font-semibold bg-[#E7E7FF] rounded p-3">
+        <h1 className="md:text-xl text-lg font-semibold bg-[#E7E7FF] rounded md:p-3 p-2">
           Offers
         </h1>
         {/* first card */}
         <div className=" lg:flex space-x-5 px-5 my-5">
-          <div className="">
+          <div className="flex items-center justify-center">
             <img src={mobile} alt="" />
           </div>
           <div className="">
@@ -43,7 +43,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
         </div>
         {/* second card */}
         <div className=" lg:flex space-x-5 px-5 my-5">
-          <div className="">
+          <div className="flex items-center justify-center">
             <img src={savings} alt="" />
           </div>
           <div className="">
@@ -69,7 +69,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
         </div>
         {/* third card */}
         <div className=" lg:flex space-x-5 px-5 my-5">
-          <div className="">
+          <div className="flex items-center justify-center">
             <img src={onlineAd} alt="" />
           </div>
           <div className="">

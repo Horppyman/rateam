@@ -25,7 +25,9 @@ const Advertise = ({ setNextPage, setRatePage }) => {
           <span className="flex items-center mx-2">
             <ChevronLeft />
           </span>{" "}
-          Advertise Now, Pay Later (ANPL)
+          <span className="text-sm md:text-lg lg:text-xl">
+            Advertise Now, Pay Later (ANPL)
+          </span>
         </p>
         <h1 className="lg:text-5xl text-2xl font-bold my-6 md:px-5 px-2">
           Advertise Now, Pay Later (ANPL)
