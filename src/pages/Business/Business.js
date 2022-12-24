@@ -14,10 +14,10 @@ const Business = () => {
       className="container mx-auto  lg:px-0
   "
     >
-      <div className="bg-orange-500 my-10 md:rounded-xl mx-2 md:mx-5">
+      <div className="bg-orange-500 my-10 md:rounded-xl mx-3 md:mx-5">
         <img src={aboutUs} alt="" className="w-full h-16 md:h-auto" />
       </div>
-      <section className="px-5 lg:px-0">
+      <section className="px-3 lg:px-0">
         {!nextPage ? (
           <>
             <Offers setNextPage={setNextPage} setRatePage={setRatePage} />

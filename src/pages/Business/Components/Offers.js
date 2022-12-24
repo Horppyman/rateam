@@ -5,12 +5,12 @@ import savings from "../../../assets/images/Savings.png";
 const Offers = ({ setNextPage, setRatePage }) => {
   return (
     <>
-      <div className="px-3">
+      <div className="">
         <h1 className="md:text-xl text-lg font-semibold bg-[#E7E7FF] rounded md:p-3 p-2">
           Offers
         </h1>
         {/* first card */}
-        <div className=" lg:flex space-x-5 px-5 my-5">
+        <div className=" lg:flex space-x-5 my-5">
           <div className="flex items-center justify-center">
             <img src={mobile} alt="" />
           </div>
@@ -42,7 +42,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
           </div>
         </div>
         {/* second card */}
-        <div className=" lg:flex space-x-5 px-5 my-5">
+        <div className=" lg:flex space-x-5  my-5">
           <div className="flex items-center justify-center">
             <img src={savings} alt="" />
           </div>
@@ -68,7 +68,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
           </div>
         </div>
         {/* third card */}
-        <div className=" lg:flex space-x-5 px-5 my-5">
+        <div className=" lg:flex space-x-5 px-2 my-5">
           <div className="flex items-center justify-center">
             <img src={onlineAd} alt="" />
           </div>

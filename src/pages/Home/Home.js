@@ -10,10 +10,10 @@ import Video from "./Components/Video";
 const Home = () => {
   ScrollToTop();
   return (
-    <section className="px-7">
-      <section className="container mx-auto mt-5">
+    <section className="">
+      <section className="container mx-auto mt-5 px-4">
         <div className="lg:flex">
-          <div className="basis-1/2 flex items-center px-5 lg:px-0">
+          <div className="basis-1/2 flex items-center px-4 lg:px-0">
             <div className="">
               <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-bold">
                 RATE & EARN

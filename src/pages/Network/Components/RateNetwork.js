@@ -17,17 +17,17 @@ const RateNetwork = () => {
   return (
     <>
       <div className="text-center mt-[140px]">
-        <section className="flex justify-center lg:justify-between">
-          <div className="hidden lg:inline-flex"></div>
+        <section className="flex justify-between lg:justify-between">
+          <div className="w-10 md:w-[100px] lg:inline-flex"></div>
           <div className="">
             <h1 className="uppercase font-semibold">
               Abuja <span> • </span> MTN NG
             </h1>
-            <h1 className=" font-bold text-lg">Average Network Score</h1>
+            <h1 className=" font-bold md:text-lg">Average Network Score</h1>
             <div className="h-1 w-28 mt-4 duration-300 transition-all ease-linear bg-black mx-auto rounded-xl"></div>
           </div>
-          <div className="w-[100px] hidden lg:inline-flex">
-            <div className="md:pr-10 flex space-x-5">
+          <div className="md:w-[100px] justify-center flex items-center lg:inline-flex">
+            <div className="md:pr-10 flex  space-x-5">
               <div
                 className="cursor-pointer"
                 onClick={() => setShowModal(!showModal)}
@@ -145,9 +145,9 @@ const RateNetwork = () => {
                 </label>
                 <div class="relative">
                   <input
-                    type="search"
+                    type="text"
                     id="default-search"
-                    className="block p-4 pl-10 w-full  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 outline-none  "
+                    className="block p-4 w-full  text-gray-900 bg-gray-50 rounded-lg border border-gray-300 outline-none  "
                     placeholder="https://examples.com/social-share-modal"
                     required
                   />
