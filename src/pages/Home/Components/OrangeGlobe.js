@@ -1,8 +1,9 @@
 import { Globe } from "../../../assets/Icons/icons";
+import orangeBg from "../../../assets/images/orangeBg.png";
 
 const OrangeGlobe = () => {
   return (
-    <div className="bg-[#FF674D] mt-16 text-white ">
+    <div className={` mt-16 text-white bgOrange`}>
       <div className="flex items-center pt-10 justify-center">
         <Globe />
       </div>
