@@ -18,17 +18,17 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-200">
               <li className="">
-                <a href="https://flowbite.com/" className="hover:underline">
+                <a href="/about" className="hover:underline">
                   FAQ's
                 </a>
               </li>
               <li>
-                <a href="https://tailwindcss.com/" className="hover:underline">
+                <a href="/about" className="hover:underline">
                   Our Investors
                 </a>
               </li>
               <li>
-                <a href="https://tailwindcss.com/" className="hover:underline">
+                <a href="/contact" className="hover:underline">
                   Partner with us
                 </a>
               </li>
@@ -41,7 +41,7 @@ const Footer = () => {
             <ul className="text-gray-200">
               <li className="">
                 <a
-                  href="https://github.com/themesberg/flowbite"
+                  href="/about"
                   className="hover:underline "
                 >
                   About Us
@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://discord.gg/4eeurUVvTy"
+                  href="/about"
                   className="hover:underline"
                 >
                   Privacy Policy
@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://discord.gg/4eeurUVvTy"
+                  href="/about"
                   className="hover:underline"
                 >
                   Our Vision
@@ -65,7 +65,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="https://discord.gg/4eeurUVvTy"
+                  href="/about"
                   className="hover:underline"
                 >
                   Our Mission
@@ -79,7 +79,7 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-200 ">
               <li className="">
-                <a href="#" className="hover:underline">
+                <a href="/contact" className="hover:underline">
                   Customer support
                 </a>
               </li>
@@ -114,7 +114,7 @@ const Footer = () => {
       {/* <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 " /> */}
       <div className="sm:flex sm:items-center sm:justify-center my-6 lg:my-8">
         <span className="text-sm text-white sm:text-center">
-          © Copyright 2021 - RateAm . All Rights Reserved.
+          © Copyright 2022 - RateAm . All Rights Reserved.
         </span>
       </div>
     </footer>

@@ -1,5 +1,6 @@
 {
   "name": "react-starter",
+  "homepage": "https://project27.axilelibrary.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -15,13 +15,13 @@ const Home = () => {
         <div className="lg:flex">
           <div className="basis-1/2 flex items-center px-5 lg:px-0">
             <div className="">
-              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem]  font-bold">
-                Rate & Earn
+              <h1 className="xl:text-[5rem] md:text-[4rem] text-[3rem] font-bold">
+                RATE & EARN
               </h1>
-              <h2 className="xl:text-[4rem] lg:text-[40px] text-[1.5rem]  font-light">
+              <h2 className="xl:text-[4rem] lg:text-[40px] text-[1.5rem] font-light">
                 Anytime, Anywhere
               </h2>
-              <p className="sm:text-lg  font-medium my-5 px-2">
+              <p className="sm:text-lg font-medium my-5 px-2">
                 RateAm is a digital product that enables you to rate calls,
                 locations and even businesses you have interacted with and earn
                 money from each rating?
