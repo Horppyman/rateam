@@ -34,7 +34,7 @@ const Numbers = () => {
               <div className="h-1 w-16 mt-2 bg-indigo-400 mx-auto rounded-xl"></div>
             </div>
             <p className="lg:text-[5rem] text-[4rem] font-bold text-gray-400 pb-10">
-              <CountUp separator="," end={117903} />
+              <CountUp separator="," end={Math.floor(Math.random() * 117903)} />
             </p>
           </div>
         </SwiperSlide>
@@ -47,7 +47,7 @@ const Numbers = () => {
               <div className="h-1 w-16 mt-2 bg-indigo-400 mx-auto rounded-xl"></div>
             </div>
             <p className="lg:text-[5rem] text-[4rem] font-bold text-gray-400 pb-10">
-              <CountUp separator="," end={571354} />
+              <CountUp separator="," end={Math.floor(Math.random() * 78903)} />
             </p>
           </div>
         </SwiperSlide>
@@ -58,7 +58,7 @@ const Numbers = () => {
               <div className="h-1 w-16 mt-2 bg-indigo-400 mx-auto rounded-xl"></div>
             </div>
             <p className="lg:text-[5rem] text-[4rem] font-bold text-gray-400 pb-10">
-              <CountUp separator="," end={402841} />
+              <CountUp separator="," end={Math.floor(Math.random() * 457876)} />
             </p>
           </div>
         </SwiperSlide>
@@ -69,7 +69,7 @@ const Numbers = () => {
               <div className="h-1 w-16 mt-2 bg-indigo-400 mx-auto rounded-xl"></div>
             </div>
             <p className="lg:text-[5rem] text-[4rem] font-bold text-gray-400 pb-10">
-              <CountUp suffix="m" end={95} />
+              <CountUp suffix="m" end={Math.floor(Math.random() * 93)} />
             </p>
           </div>
         </SwiperSlide>
@@ -82,7 +82,7 @@ const Numbers = () => {
               <div className="h-1 w-16 mt-2 bg-indigo-400 mx-auto rounded-xl"></div>
             </div>
             <p className="lg:text-[5rem] text-[4rem] font-bold text-gray-400 pb-10">
-              <CountUp suffix="m" end={850} />
+              <CountUp suffix="m" end={Math.floor(Math.random() * 903)} />
             </p>
           </div>
         </SwiperSlide>
@@ -95,7 +95,10 @@ const Numbers = () => {
               <div className="h-1 w-16 mt-2 bg-indigo-400 mx-auto rounded-xl"></div>
             </div>
             <p className="lg:text-[5rem] text-[4rem] font-bold text-gray-400 pb-10">
-              <CountUp separator="," end={21991825} />
+              <CountUp
+                separator=","
+                end={Math.floor(Math.random() * 21991825)}
+              />
             </p>
           </div>
         </SwiperSlide>

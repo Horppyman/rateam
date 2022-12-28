@@ -7,11 +7,37 @@ import Numbers from "./Components/Numbers";
 import OrangeGlobe from "./Components/OrangeGlobe";
 import PurplePicture from "./Components/PurplePicture";
 import Video from "./Components/Video";
+import { useInView } from "react-intersection-observer";
 const Home = () => {
+  const { ref: Main, inView: MainIsVisible } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+  const { ref: Second, inView: SecondIsVisible } = useInView({
+    threshold: 0.4,
+    triggerOnce: true,
+  });
+  const { ref: Third, inView: ThirdIsVisible } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
+  const { ref: Fourth, inView: FourthIsVisible } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+  const { ref: Fifth, inView: FifthIsVisible } = useInView({
+    threshold: 0.2,
+    triggerOnce: true,
+  });
   ScrollToTop();
   return (
     <section className="">
-      <section className="container mx-auto mt-5 px-4">
+      <section
+        className={`container mx-auto mt-5 px-4 ${
+          MainIsVisible ? "opacity-100" : "opacity-0 translate-x-28"
+        } transition-all ease-in duration-1000`}
+        ref={Main}
+      >
         <div className="lg:flex">
           <div className="basis-1/2 flex items-center px-4 lg:px-0">
             <div className="">
@@ -42,11 +68,39 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <Video />
-      <OrangeGlobe />
+      <section
+        className={` ${
+          SecondIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={Second}
+      >
+        <Video />
+      </section>
+      <section
+        className={` ${
+          ThirdIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={Third}
+      >
+        <OrangeGlobe />
+      </section>
       <Cards />
-      <Numbers />
-      <PurplePicture />
+      <section
+        className={` ${
+          FourthIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={Fourth}
+      >
+        <Numbers />
+      </section>
+      <section
+        className={` ${
+          FifthIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={Fifth}
+      >
+        <PurplePicture />
+      </section>
       <Newsletter />
     </section>
   );

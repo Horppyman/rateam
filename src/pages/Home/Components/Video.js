@@ -15,7 +15,13 @@ const Video = () => {
       <div className="flex relative items-center justify-center container mx-auto">
         <img src={woman} alt="" className="text-center w-full" />
         <span className="absolute ">
-          <Play />
+          <a
+            href="https://www.youtube.com/watch?v=v6m_xR_fXJU"
+            className=""
+            target="_blank"
+          >
+            <Play />
+          </a>
         </span>
       </div>
     </section>

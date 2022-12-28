@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-
+import { useInView } from "react-intersection-observer";
 import first from "../../../assets/images/First.png";
 import second from "../../../assets/images/second.png";
 import third from "../../../assets/images/third.png";
@@ -7,19 +7,31 @@ import fourth from "../../../assets/images/fourth.png";
 import Numbers from "./Numbers";
 
 const Cards = () => {
-  const [isMobile, setIsMobile] = useState(false);
-
-  useEffect(() => {
-    if (window.innerWidth > 540) {
-      setIsMobile(false);
-    } else {
-      setIsMobile(true);
-    }
-  }, [window.innerWidth]);
+  const { ref: First, inView: FirstIsVisible } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+  const { ref: Second, inView: SecondIsVisible } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+  const { ref: Third, inView: ThirdIsVisible } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+  const { ref: Fourth, inView: FourthIsVisible } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
   return (
     <section className="container mx-auto">
       {/* first */}
-      <div className="md:flex items-center space-x-5 p-4">
+      <div
+        className={`md:flex items-center space-x-5 p-4  ${
+          FirstIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={First}
+      >
         <div className="basis-1/2 flex justify-center relative">
           <img
             src={first}
@@ -43,7 +55,12 @@ const Cards = () => {
         </div>
       </div>
       {/* second */}
-      <div className="md:flex items-center my-8">
+      <div
+        className={`md:flex items-center my-8  ${
+          SecondIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={Second}
+      >
         <div className="basis-1/2 order-2 flex justify-center mt-5 px-3 md-px-0">
           <img src={second} alt="" />
         </div>
@@ -66,7 +83,12 @@ const Cards = () => {
         </div>
       </div>
       {/* third */}
-      <div className="md:flex items-center my-5 space-x-5">
+      <div
+        className={`md:flex items-center my-5 space-x-5  ${
+          ThirdIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={Third}
+      >
         <div className="basis-1/2 flex justify-center">
           <img src={third} alt="" />
         </div>
@@ -94,7 +116,12 @@ const Cards = () => {
         </div>
       </div>
       {/* fourth */}
-      <div className="md:flex items-center my-5 space-x-5">
+      <div
+        className={`md:flex items-center my-5 space-x-5  ${
+          FourthIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
+        } transition-all ease-in duration-1000`}
+        ref={Fourth}
+      >
         <div className="basis-1/2 order-2 flex justify-center">
           <img src={fourth} alt="" />
         </div>

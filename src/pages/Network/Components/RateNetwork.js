@@ -42,7 +42,8 @@ const RateNetwork = () => {
           <Star />
           <span className="lg:text-[17rem] md:text-[10rem] text-[5rem] font-bold">
             {" "}
-            3.5
+            <span>{Math.floor(Math.random() * 5)}</span>.
+            <span>{Math.floor(Math.random() * 6)}</span>
           </span>
         </h1>
         <h1 className="text-sm text-gray-400">4,217 Rating - last 24hrs</h1>
