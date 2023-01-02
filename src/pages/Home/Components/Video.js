@@ -16,7 +16,7 @@ const Video = () => {
         <img src={woman} alt="" className="text-center w-full" />
         <span className="absolute ">
           <a
-            href="https://www.youtube.com/watch?v=v6m_xR_fXJU"
+            href="https://youtu.be/qYhkI2Gt3kU"
             className=""
             target="_blank"
           >
