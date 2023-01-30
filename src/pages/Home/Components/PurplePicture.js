@@ -3,7 +3,7 @@ import bottom from "../../../assets/images/bottom.png";
 
 const PurplePicture = () => {
   return (
-    <div className="container mx-auto px-3 lg:px-0">
+    <div className="container mx-auto mb-10 px-3 lg:px-0">
       <div className=" bg-purple-500 rounded-lg p-5 max-w-[80rem] mx-auto">
         <div className="lg:flex my-10">
           <div className="order-2 flex items-center justify-center basis-1/3  mb-5 lg:mb-0">
@@ -45,14 +45,14 @@ const PurplePicture = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center my-10">
+      {/* <div className="flex justify-center my-10">
         <button
           type="button"
           class="text-white bg-[#7776BC] font-medium rounded text-xl px-5 mr-2 mb-2 h-[55px]"
         >
           Download The App
         </button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -8,6 +8,9 @@ import OrangeGlobe from "./Components/OrangeGlobe";
 import PurplePicture from "./Components/PurplePicture";
 import Video from "./Components/Video";
 import { useInView } from "react-intersection-observer";
+import Networks from "./Components/Networks";
+import Testimonials from "./Components/Testimonials";
+import Faq from "./Components/Faq";
 const Home = () => {
   const { ref: Main, inView: MainIsVisible } = useInView({
     threshold: 0.1,
@@ -33,7 +36,7 @@ const Home = () => {
   return (
     <section className="">
       <section
-        className={`container mx-auto mt-5 px-4 ${
+        className={`container h-screen mx-auto mt-5 px-4 ${
           MainIsVisible ? "opacity-100" : "opacity-0 translate-x-28"
         } transition-all ease-in duration-1000`}
         ref={Main}
@@ -68,6 +71,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Networks />
       <section
         className={` ${
           SecondIsVisible ? "opacity-100" : "opacity-0 translate-x-10"
@@ -101,6 +105,8 @@ const Home = () => {
       >
         <PurplePicture />
       </section>
+      <Testimonials />
+      <Faq />
       <Newsletter />
     </section>
   );
