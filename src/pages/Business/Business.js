@@ -5,9 +5,11 @@ import Advertise from "./Advertise";
 import Offers from "./Components/Offers";
 import Partnership from "./Components/Partnership";
 import RateAm from "./RateAm";
+import RateAmBusiness from "./RateAmBusiness";
 const Business = () => {
   const [nextPage, setNextPage] = useState(false);
   const [ratePage, setRatePage] = useState(false);
+  const [rateAmPage, setRateAmPage] = useState(false);
   ScrollToTop();
   return (
     <div
@@ -25,8 +27,10 @@ const Business = () => {
           </>
         ) : ratePage ? (
           <RateAm setNextPage={setNextPage} setRatePage={setRatePage} />
-        ) : (
+        ) : rateAmPage ? (
           <Advertise setNextPage={setNextPage} setRatePage={setRatePage} />
+        ) : (
+          <RateAmBusiness />
         )}
       </section>
       <section className="h-[30rem]"></section>

@@ -33,6 +33,39 @@ const Partnership = () => {
             range of relative strength and weakness thus required input by or
             feedback from crowds of users: crowdsourcing big data.
           </p>
+          <p className="font-medium my-5">
+            How each network operator handles these latest developments can give
+            them a <br /> new competitive advantage, or see them slip back
+            behind their rivals. Monitoring is vital.
+          </p>
+          <p className="font-medium my-5">
+            Our customization ideation platform empowers you to crowd-source and
+            gather <br /> feedback from the frontline. Uncover and scalethe
+            brilliant ideas that move the needle. Partner with us.
+          </p>
+
+          <button
+            type="button"
+            class="text-white bg-[#7776BC] text-xl px-3 mr-2 mb-5 py-1"
+          >
+            Contact Us
+          </button>
+        </div>
+        {/* third card */}
+        <div className="border  shadow-md   px-5 my-5">
+          <h1 className="text-3xl font-bold my-4">
+            Network Experience Demographics (crowd-sourced)
+          </h1>
+          <p className="font-medium my-5">
+            Locations (states) can be shown in list format and smileys will be
+            used to represent the network <br /> mood for each location with its
+            corresponding network.
+          </p>
+          <p className="font-medium my-5">
+            When each location is clicked on, it expands showing activity
+            details <br /> (number of calls, rates with timestamps, average
+            ratings etc) This is only available to subscribed partners
+          </p>
 
           <button
             type="button"

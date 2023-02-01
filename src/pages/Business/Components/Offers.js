@@ -10,7 +10,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
           Offers
         </h1>
         {/* first card */}
-        <div className=" lg:flex space-x-5 my-5">
+        <div className=" lg:flex space-x-5 my-5 border-b-4 border-r-4 border-black mb-10">
           <div className="flex items-center justify-center">
             <img src={mobile} alt="" />
           </div>
@@ -42,7 +42,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
           </div>
         </div>
         {/* second card */}
-        <div className=" lg:flex space-x-5  my-5">
+        <div className=" lg:flex space-x-5  my-5  border-b-4 border-r-4 border-black mb-10">
           <div className="flex items-center justify-center">
             <img src={savings} alt="" />
           </div>
@@ -68,13 +68,13 @@ const Offers = ({ setNextPage, setRatePage }) => {
           </div>
         </div>
         {/* third card */}
-        <div className=" lg:flex space-x-5 px-2 my-5">
+        <div className=" lg:flex space-x-5 px-2 my-5  border-b-4 border-r-4 border-black mb-10">
           <div className="flex items-center justify-center">
             <img src={onlineAd} alt="" />
           </div>
           <div className="">
             <h1 className="text-3xl font-bold my-4">
-              Advertise Now, Pay Later (ANPL)
+              RateAm for Business - Advertise here
             </h1>
             <p className="font-medium my-3">
               Are you an SME_ Your next customer is just a call away, RateAm

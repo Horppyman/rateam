@@ -1,4 +1,6 @@
 import AboutUs from "../../assets/images/About.png";
+import CEO from "./Components/CEO";
+import WhatIsRateAm from "./Components/WhatIsRateAm";
 import WhatWeDo from "./Components/WhatWeDo";
 const About = () => {
   return (
@@ -46,6 +48,8 @@ const About = () => {
         </p>
       </div>
       <section className="mt-10">
+        <WhatIsRateAm />
+        <CEO />
         <WhatWeDo />
       </section>
     </section>

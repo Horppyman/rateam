@@ -11,8 +11,8 @@ const WhatWeDo = () => {
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-3 my-10">
         {/* first */}
-        <div className="col-span-1 flex justify-center my-3">
-          <div className=" p-5 w-80 bg-gray-200 text-center rounded-lg">
+        <div className="col-span-1 mx-5 flex justify-center my-3">
+          <div className=" p-5  bg-gray-200 text-center rounded-lg">
             <h1 className="text-xl font-semibold">Users</h1>
             <div className="flex justify-center items-center mb-5">
               <img src={online} alt="" />
@@ -27,8 +27,8 @@ const WhatWeDo = () => {
           </div>
         </div>
         {/* second */}
-        <div className="col-span-1 flex justify-center my-3">
-          <div className=" p-5 w-80 bg-gray-200 text-center rounded-lg">
+        <div className="col-span-1 mx-5 flex justify-center my-3">
+          <div className=" p-5  bg-gray-200 text-center rounded-lg">
             <h1 className="text-xl font-semibold">Network Provider</h1>
             <div className="flex justify-center items-center mb-5">
               <img src={Customer} alt="" />
@@ -43,8 +43,8 @@ const WhatWeDo = () => {
           </div>
         </div>
         {/* third */}
-        <div className="col-span-1 flex justify-center my-3">
-          <div className=" p-5 w-80 bg-gray-200 text-center rounded-lg">
+        <div className="col-span-1 mx-5 flex justify-center my-3">
+          <div className=" p-5  bg-gray-200 text-center rounded-lg">
             <h1 className="text-xl font-semibold">Businesses</h1>
             <div className="flex justify-center items-center mb-5">
               <img src={about12} alt="" />
