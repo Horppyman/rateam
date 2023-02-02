@@ -7,6 +7,8 @@ import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
 import About from "./pages/About/About";
 import Contact from "./pages/ContactUs/Contact";
+import FAQ from "./pages/FAQ";
+import TermsAndCondition from "./pages/TermsAndCondition";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
             <Route path="network" element={<Network />} />
             <Route path="about" element={<About />} />
             <Route path="contact" element={<Contact />} />
+            <Route path="faq" element={<FAQ />} />
+            <Route path="terms" element={<TermsAndCondition />} />
           </Route>
           <Route path="Modal" element={<>Modal</>} />
         </Route>

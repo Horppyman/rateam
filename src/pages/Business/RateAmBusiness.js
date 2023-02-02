@@ -4,12 +4,15 @@ import hero from "../../assets/images/Business/hero.png";
 import hero2 from "../../assets/images/Business/hero2.png";
 import branch from "../../assets/images/Business/branch.png";
 import marketing from "../../assets/images/Business/marketing.png";
-import suitcase from "../../assets/images/Business/hero2.png";
+import suitcase from "../../assets/images/Business/suitcase.png";
 import publiC from "../../assets/images/Business/public.png";
 import voting from "../../assets/images/Business/voting.png";
 import religion from "../../assets/images/Business/religion.png";
+import Online from "../../assets/images/Business/Online.png";
+import Manage from "../../assets/images/Business/Manage.png";
+import Connected from "../../assets/images/Business/Connected.png";
 
-const RateAmBusiness = () => {
+const RateAmBusiness = ({ setNewPage }) => {
   return (
     <div
       className="container mx-auto px-5 lg:px-0
@@ -17,7 +20,10 @@ const RateAmBusiness = () => {
     >
       <div className="">
         <p className="flex items-center text-gray-700 lg:text-xl px-5">
-          <span className="cursor-pointer"> Business</span>
+          <span onClick={() => setNewPage("home")} className="cursor-pointer">
+            {" "}
+            Business
+          </span>
           <span className="flex items-center mx-2">
             <ChevronLeft />
           </span>{" "}
@@ -71,9 +77,10 @@ const RateAmBusiness = () => {
         </p>
       </section>
       <section>
-        <h1 className="text-center font-bold text-2xl">USE CASE</h1>
-        <section className="grid grid-flow-col-dense grid-cols-3 grid-rows-3">
-          <section className="mb-10">
+        <h1 className="text-center my-10 font-bold text-2xl">USE CASE</h1>
+        <section className="grid grid-cols-1 place-items-center md:place-items-start grid-flow-row-dense md:grid-cols-3 gap-5">
+          {/* first */}
+          <section className="mb-10 max-w-xs">
             <div className="">
               <img
                 src={voting}
@@ -106,10 +113,11 @@ const RateAmBusiness = () => {
               </p>
             </div>
           </section>
-          <section className="mb-10">
+          {/* second */}
+          <section className="mb-10 max-w-xs">
             <div className="">
               <img
-                src={voting}
+                src={branch}
                 alt=""
                 className="bg-orange-400 w-20 p-2 mx-auto rounded
             "
@@ -117,28 +125,157 @@ const RateAmBusiness = () => {
             </div>
             <div className="">
               <h1 className="text-lg font-bold text-gray-800 text-center mt-2">
-                ELECTIONEERING CAMPAIGNS
+                MSMES
               </h1>
-              <h6 className="text-sm font-bold text-gray-800 mt-3">
-                National/State Elections
-              </h6>
+
               <p className="text-xs font-semi-bold text-gray-600 tracking-wide leading-5">
-                Politicians can mobilize support groups and market their mandate
-                through this app by running targeted Ads with customized
-                payments like 100/200 etc per view/expression. Ideal build
-                positive sentiments and inspire electorate.
-              </p>
-              <h6 className="text-sm font-bold text-gray-800 mt-3">
-                Student Elections
-              </h6>
-              <p className="text-xs font-semi-bold text-gray-600 tracking-wide leading-5">
-                Student will enjoy the social validation that comes with using
-                this App to run targeted campaigns during school elections. The
-                use of this among student is intended to become part of students
-                lifestyle.
+                Ideal advertising plug for SMEs withlimited budget for unlimited
+                returnson Ad spend. Helps businessesdrive sales and awareness
+                fortargeted niches based on budget.
               </p>
             </div>
           </section>
+          {/* third */}
+          <section className="mb-10 max-w-xs">
+            <div className="">
+              <img
+                src={publiC}
+                alt=""
+                className="bg-orange-400 w-20 p-2 mx-auto rounded
+            "
+              />
+            </div>
+            <div className="">
+              <h1 className="text-lg font-bold text-gray-800 text-center mt-2">
+                BIG BRANDS
+              </h1>
+
+              <p className="text-xs font-semi-bold text-gray-600 tracking-wide leading-5">
+                Brand endorsement and awareness for larger audiences. Brands
+                that plan to run large scale campaigns for new or existing
+                products can leverage on the reach and potency of this platform
+                to create massive awareness and impact.
+              </p>
+            </div>
+          </section>
+          {/* fourth */}
+          <section className="mb-10 max-w-xs">
+            <div className="">
+              <img
+                src={suitcase}
+                alt=""
+                className="bg-orange-400 w-20 p-2 mx-auto rounded
+            "
+              />
+            </div>
+            <div className="">
+              <h1 className="text-lg font-bold text-gray-800 text-center mt-2">
+                JOBS
+              </h1>
+
+              <p className="text-xs font-semi-bold text-gray-600 tracking-wide leading-5">
+                Organizations can leverage on thereach and audience of this app
+                toput up job ads. Start hiring betterand smarter without limits.
+                Yournext employee could just be callaway.
+              </p>
+            </div>
+          </section>
+          {/* fifth */}
+          <section className="mb-10 max-w-xs">
+            <div className="">
+              <img
+                src={religion}
+                alt=""
+                className="bg-orange-400 w-20 p-2 mx-auto rounded
+            "
+              />
+            </div>
+            <div className="">
+              <h1 className="text-lg font-bold text-gray-800 text-center mt-2 uppercase">
+                Religious
+              </h1>
+
+              <p className="text-xs font-semi-bold text-gray-600 tracking-wide leading-5">
+                Religious organization can use thisAd medium to mobilize
+                membersand new members for crusades,fellowships etc.
+              </p>
+            </div>
+          </section>
+          {/* sixth */}
+          <section className="mb-10 max-w-xs">
+            <div className="">
+              <img
+                src={marketing}
+                alt=""
+                className="bg-orange-400 w-20 p-2 mx-auto rounded
+            "
+              />
+            </div>
+            <div className="">
+              <h1 className="text-lg font-bold text-gray-800 text-center mt-2">
+                EVENTS PROMOTION
+              </h1>
+
+              <p className="text-xs font-semi-bold text-gray-600 tracking-wide leading-5">
+                We make it makes it easy for you tocreate and promote your event
+                byadvertising on callers that suitsyour niche, generate tickets
+                salesand build up excitement
+              </p>
+              <p className="text-xs font-semi-bold text-gray-600 tracking-wide leading-5">
+                · Create an event · Send an event · Reminders Broadcast to all
+              </p>
+            </div>
+          </section>
+        </section>
+      </section>
+      {/* last part */}
+      <section>
+        <h1 className=" my-10 font-bold text-2xl">BENEFITS TO BRAND</h1>
+        <section>
+          <div className=" flex space-x-5 my-5  mb-10">
+            <div className="flex w-64 items-center justify-center">
+              <img src={Connected} alt="" className="object-contain" />
+            </div>
+            <div className="">
+              <h1 className="md:text-3xl font-bold my-4">
+                REACH real callers not Bots
+              </h1>
+              <p className="md:font-medium text-xs md:text-base max-w-2xl">
+                Unlike bot accounts on social media, RateAm will give businesses
+                access to millions of daily callers cut across different
+                demographics. Your next customer could be just a call away
+              </p>
+            </div>
+          </div>
+          <div className=" flex space-x-5 my-5  mb-10">
+            <div className="flex w-64 items-center justify-center">
+              <img src={Manage} alt="" className="object-contain" />
+            </div>
+            <div className="">
+              <h1 className="md:text-3xl font-bold my-4">SME loans (ANPL)</h1>
+              <p className="md:font-medium text-xs md:text-base max-w-2xl">
+                Our platform offers advert loan services to SMEs that are
+                registered and have healthyrating scores. Through our USSD
+                service, they can access different bundle plans and will repay
+                in their next recharge. Advertise Now, Pay Later.
+              </p>
+            </div>
+          </div>
+          <div className=" flex space-x-5 my-5  mb-10">
+            <div className="flex w-64 items-center justify-center">
+              <img src={Online} alt="" className="object-contain" />
+            </div>
+            <div className="">
+              <h1 className="md:text-3xl font-bold my-4">4.5 Rating</h1>
+              <p className="md:font-medium text-xs md:text-base max-w-2xl">
+                20% Advertisement Discount For Brands With Good Rating Score
+                (4.5) Businesses that have an average 4.5 ratings for every 100
+                Raters milestone, will earn a 20% advertisement discount
+                voucher. The idea here is to promote a great customer centric
+                services across all registered or intending businesses
+              </p>
+            </div>
+          </div>
         </section>
       </section>
     </div>

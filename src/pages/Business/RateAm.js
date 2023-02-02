@@ -3,7 +3,7 @@ import carousel from "../../assets/images/carousel.png";
 import piggy from "../../assets/images/Piggy.png";
 import { ChevronLeft } from "../../assets/Icons/icons";
 
-const RateAm = ({ setNextPage, setRatePage }) => {
+const RateAm = ({ setNewPage }) => {
   ScrollToTop();
   return (
     <div
@@ -12,13 +12,7 @@ const RateAm = ({ setNextPage, setRatePage }) => {
     >
       <div className=" md:px-5 px-2">
         <p className="flex items-center text-gray-700 lg:text-xl">
-          <span
-            className="cursor-pointer"
-            onClick={() => {
-              setNextPage(false);
-              setRatePage(false);
-            }}
-          >
+          <span onClick={() => setNewPage("home")} className="cursor-pointer">
             {" "}
             Business
           </span>

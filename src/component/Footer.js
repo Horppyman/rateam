@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ArrowDown } from "../assets/Icons/icons";
 import logoLight from "../assets/images/logoLight.png";
 
@@ -18,9 +19,9 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-200">
               <li className="">
-                <a href="/about" className="hover:underline">
+                <Link to="/faq" className="hover:underline">
                   FAQ's
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="/about" className="hover:underline">
@@ -40,34 +41,22 @@ const Footer = () => {
             </h2>
             <ul className="text-gray-200">
               <li className="">
-                <a
-                  href="/about"
-                  className="hover:underline "
-                >
+                <a href="/about" className="hover:underline ">
                   About Us
                 </a>
               </li>
               <li>
-                <a
-                  href="/about"
-                  className="hover:underline"
-                >
+                <a href="/about" className="hover:underline">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a
-                  href="/about"
-                  className="hover:underline"
-                >
+                <a href="/about" className="hover:underline">
                   Our Vision
                 </a>
               </li>
               <li>
-                <a
-                  href="/about"
-                  className="hover:underline"
-                >
+                <a href="/about" className="hover:underline">
                   Our Mission
                 </a>
               </li>

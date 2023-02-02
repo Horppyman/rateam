@@ -7,9 +7,34 @@ import Partnership from "./Components/Partnership";
 import RateAm from "./RateAm";
 import RateAmBusiness from "./RateAmBusiness";
 const Business = () => {
-  const [nextPage, setNextPage] = useState(false);
-  const [ratePage, setRatePage] = useState(false);
-  const [rateAmPage, setRateAmPage] = useState(false);
+  const [offersValue, setOffersValue] = useState(true);
+  const [rateAmValue, setRateAmValue] = useState(false);
+  const [advertiseValue, setAdvertiseValue] = useState(false);
+  const [businessValue, setBusinessValue] = useState(false);
+
+  const setNewPage = (path) => {
+    if (path == "home") {
+      setOffersValue(true);
+      setRateAmValue(false);
+      setAdvertiseValue(false);
+      setBusinessValue(false);
+    } else if (path == "rateam") {
+      setOffersValue(false);
+      setRateAmValue(true);
+      setAdvertiseValue(false);
+      setBusinessValue(false);
+    } else if (path == "advert") {
+      setOffersValue(false);
+      setRateAmValue(false);
+      setAdvertiseValue(true);
+      setBusinessValue(false);
+    } else if (path == "business") {
+      setOffersValue(false);
+      setRateAmValue(false);
+      setAdvertiseValue(false);
+      setBusinessValue(true);
+    }
+  };
   ScrollToTop();
   return (
     <div
@@ -20,18 +45,13 @@ const Business = () => {
         <img src={aboutUs} alt="" className="w-full h-16 md:h-auto" />
       </div>
       <section className="px-3 lg:px-0">
-        {!nextPage ? (
-          <>
-            <Offers setNextPage={setNextPage} setRatePage={setRatePage} />
-            <Partnership />
-          </>
-        ) : ratePage ? (
-          <RateAm setNextPage={setNextPage} setRatePage={setRatePage} />
-        ) : rateAmPage ? (
-          <Advertise setNextPage={setNextPage} setRatePage={setRatePage} />
-        ) : (
-          <RateAmBusiness />
-        )}
+        {offersValue && <Offers setNewPage={setNewPage} />}
+
+        {rateAmValue && <RateAm setNewPage={setNewPage} />}
+
+        {advertiseValue && <Advertise setNewPage={setNewPage} />}
+
+        {businessValue && <RateAmBusiness setNewPage={setNewPage} />}
       </section>
       <section className="h-[30rem]"></section>
     </div>

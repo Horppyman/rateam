@@ -1,8 +1,9 @@
 import mobile from "../../../assets/images/Mobile-Marketing.png";
 import onlineAd from "../../../assets/images/Online-ads.png";
 import savings from "../../../assets/images/Savings.png";
+import Partnership from "./Partnership";
 
-const Offers = ({ setNextPage, setRatePage }) => {
+const Offers = ({ setNewPage }) => {
   return (
     <>
       <div className="">
@@ -30,11 +31,8 @@ const Offers = ({ setNextPage, setRatePage }) => {
               </li>
             </ul>
             <button
+              onClick={() => setNewPage("advert")}
               type="button"
-              onClick={() => {
-                setNextPage(true);
-                setRatePage(false);
-              }}
               className="text-white bg-[#7776BC] text-lg px-3 mr-2 mb-2 py-1"
             >
               Learn More
@@ -56,12 +54,9 @@ const Offers = ({ setNextPage, setRatePage }) => {
             </p>
 
             <button
+              onClick={() => setNewPage("rateam")}
               type="button"
               className="text-white bg-[#7776BC] text-lg px-3 mr-2 mb-2 py-1"
-              onClick={() => {
-                setNextPage(true);
-                setRatePage(true);
-              }}
             >
               Learn More
             </button>
@@ -83,6 +78,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
               by the content they view with each call they rate
             </p>
             <button
+              onClick={() => setNewPage("business")}
               type="button"
               className="text-white bg-[#7776BC] text-lg px-3 mr-2 mb-2 py-1"
             >
@@ -91,6 +87,7 @@ const Offers = ({ setNextPage, setRatePage }) => {
           </div>
         </div>
       </div>
+      <Partnership />
     </>
   );
 };

@@ -3,7 +3,7 @@ import carousel from "../../assets/images/carousel.png";
 import aboutUs from "../../assets/images/aboutUs.png";
 import { ChevronLeft } from "../../assets/Icons/icons";
 
-const Advertise = ({ setNextPage, setRatePage }) => {
+const Advertise = ({ setNewPage }) => {
   ScrollToTop();
   return (
     <div
@@ -12,13 +12,7 @@ const Advertise = ({ setNextPage, setRatePage }) => {
     >
       <div className="">
         <p className="flex items-center text-gray-700 lg:text-xl px-5">
-          <span
-            onClick={() => {
-              setNextPage(false);
-              setRatePage(false);
-            }}
-            className="cursor-pointer"
-          >
+          <span onClick={() => setNewPage("home")} className="cursor-pointer">
             {" "}
             Business
           </span>
