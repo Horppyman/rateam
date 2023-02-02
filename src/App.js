@@ -9,6 +9,9 @@ import About from "./pages/About/About";
 import Contact from "./pages/ContactUs/Contact";
 import FAQ from "./pages/FAQ";
 import TermsAndCondition from "./pages/TermsAndCondition";
+import PricingAndBilling from "./pages/PricingAndBilling";
+import Award from "./pages/Award/Award";
+import HowItWorks from "./pages/HowItWorks/HowItWorks";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="faq" element={<FAQ />} />
             <Route path="terms" element={<TermsAndCondition />} />
+            <Route path="pricing" element={<PricingAndBilling />} />
+            <Route path="award" element={<Award />} />
+            <Route path="how-it-works" element={<HowItWorks />} />
           </Route>
           <Route path="Modal" element={<>Modal</>} />
         </Route>
