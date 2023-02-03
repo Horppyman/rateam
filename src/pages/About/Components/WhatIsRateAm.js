@@ -3,7 +3,7 @@ import about from "../../../assets/images/About/RateAm.png";
 
 const WhatIsRateAm = () => {
   return (
-    <div>
+    <div className="px-3 md:px-0">
       <h1 className="text-center text-4xl font-light">
         What is <span className="font-bold">RateAm</span>
       </h1>
