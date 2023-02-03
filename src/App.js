@@ -12,6 +12,7 @@ import TermsAndCondition from "./pages/TermsAndCondition";
 import PricingAndBilling from "./pages/PricingAndBilling";
 import Award from "./pages/Award/Award";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
+import Success from "./pages/Success";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/signin" element={<Signin />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/success" element={<Success />} />
 
         <Route path="/">
           <Route element={<AppLayout />}>
