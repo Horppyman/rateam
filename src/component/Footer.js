@@ -25,13 +25,23 @@ const Footer = () => {
               </li>
               <li>
                 <a href="/about" className="hover:underline">
-                  Our Investors
+                  Partner with us
                 </a>
               </li>
               <li>
-                <a href="/contact" className="hover:underline">
-                  Partner with us
-                </a>
+                <Link to="/pricing" href="/contact" className="hover:underline">
+                  Pricing and billing
+                </Link>
+              </li>
+              <li>
+                <Link to="/how-it-works" className="hover:underline">
+                  How it works
+                </Link>
+              </li>
+              <li>
+                <Link to="/award" className="hover:underline">
+                  Telecom CXCN Award
+                </Link>
               </li>
             </ul>
           </div>
@@ -46,19 +56,9 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/about" className="hover:underline">
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="hover:underline">
-                  Our Vision
-                </a>
-              </li>
-              <li>
-                <a href="/about" className="hover:underline">
-                  Our Mission
-                </a>
+                <Link to="/terms" className="hover:underline">
+                  Terms & conditions
+                </Link>
               </li>
             </ul>
           </div>
