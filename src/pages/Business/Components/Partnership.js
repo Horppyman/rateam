@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Partnership = () => {
   return (
@@ -44,12 +45,13 @@ const Partnership = () => {
             brilliant ideas that move the needle. Partner with us.
           </p>
 
-          <button
+          <Link
+            to="/contact"
             type="button"
             class="text-white bg-[#7776BC] text-xl px-3 mr-2 mb-5 py-1"
           >
             Contact Us
-          </button>
+          </Link>
         </div>
         {/* third card */}
         <div className="border  shadow-md   px-5 my-5">
@@ -67,12 +69,13 @@ const Partnership = () => {
             ratings etc) This is only available to subscribed partners
           </p>
 
-          <button
+          <Link
+            to="/contact"
             type="button"
             class="text-white bg-[#7776BC] text-xl px-3 mr-2 mb-5 py-1"
           >
             Contact Us
-          </button>
+          </Link>
         </div>
       </div>
     </>

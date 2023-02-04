@@ -13,14 +13,16 @@ import PricingAndBilling from "./pages/PricingAndBilling";
 import Award from "./pages/Award/Award";
 import HowItWorks from "./pages/HowItWorks/HowItWorks";
 import Success from "./pages/Success";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/signin" element={<Signin />} />
-        <Route path="/signup" element={<Signup />} />
         <Route path="/success" element={<Success />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
 
         <Route path="/">
           <Route element={<AppLayout />}>

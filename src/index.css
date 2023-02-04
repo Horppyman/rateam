@@ -2,23 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   margin: 0;
-  font-family: 'Poppins' ,'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "Poppins", "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.bgOrange{
+.bgOrange {
   background-image: url(./assets/images/orangeBg.png);
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
 }
 
-.animate{
-  @apply transition-all ease-in duration-1000
+.animate {
+  @apply transition-all ease-in duration-1000;
+}
+
+.login {
+  background-image: url(./assets/images/login.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.register {
+  background-image: url(./assets/images/register.png);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
 }
