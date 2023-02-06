@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/images/rate-am.png";
 
 const Register = () => {
@@ -70,11 +71,6 @@ const Register = () => {
                       Remember me
                     </label>
                   </div>
-                  <div>
-                    <a href="#" className="font-medium text-[#ff674d]">
-                      Forgot Password?
-                    </a>
-                  </div>
                 </div>
                 <button className="w-full py-3 font-medium text-white bg-[#ff674d] hover:bg-[#ff674d] rounded-lg border-[#ff674d] hover:shadow inline-flex space-x-2 items-center justify-center">
                   <svg
@@ -118,9 +114,12 @@ const Register = () => {
                       />
                     </svg>
                   </div>
-                  <h1 className="px-4 py-3 w-5/6 text-center text-gray-600 font-bold">
+                  <Link
+                    to="/login"
+                    className="px-4 py-3 w-5/6 text-center text-gray-600 font-bold"
+                  >
                     Sign in with Google
-                  </h1>
+                  </Link>
                 </a>
               </div>
             </form>

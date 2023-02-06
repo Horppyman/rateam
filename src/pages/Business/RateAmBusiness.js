@@ -11,8 +11,10 @@ import religion from "../../assets/images/Business/religion.png";
 import Online from "../../assets/images/Business/Online.png";
 import Manage from "../../assets/images/Business/Manage.png";
 import Connected from "../../assets/images/Business/Connected.png";
+import { ScrollToTop } from "../../app/scroll";
 
 const RateAmBusiness = ({ setNewPage }) => {
+  ScrollToTop();
   return (
     <div
       className="container mx-auto px-5 lg:px-0

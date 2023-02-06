@@ -4,6 +4,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Autoplay } from "swiper";
 import CountUp from "react-countup";
+// Link
+import { Link } from "react-router-dom";
 // images
 import qatar from "../../../assets/images/Networks/Qatar.png";
 import beeline from "../../../assets/images/Networks/BeeLine.png";
@@ -110,9 +112,12 @@ const Networks = () => {
           Brands: Connect your business with millions of callers across these
           networks
         </h1>
-        <button className="uppercase py-2 px-5 mt-5 bg-[#FF674D] text-white rounded-lg font-bold tracking-wider md:text-lg">
+        <Link
+          to="/register"
+          className="uppercase py-2 px-5 mt-5 bg-[#FF674D] text-white rounded-lg font-bold tracking-wider md:text-lg"
+        >
           Sign up now
-        </button>
+        </Link>
       </div>
     </div>
   );

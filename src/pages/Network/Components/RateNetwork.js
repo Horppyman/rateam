@@ -18,8 +18,31 @@ const RateNetwork = () => {
     <>
       <div className="text-center mt-[140px]">
         <section className="flex justify-between lg:justify-between">
-          <div className="w-10 md:w-[100px] lg:inline-flex"></div>
-          <div className="">
+          <div className=" md:w-[140px] w-[90px] ml-5  md:inline-flex">
+            <div className="lg:w-56 ">
+              <select
+                id="countries"
+                className="bg-gray-100 border border-gray-300  appearance-none md:text-lg text-red-600 rounded-lg outline-none block w-full p-2.5 "
+              >
+                <option selected>
+                  {/* <span>
+                    <img
+                      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTguSNEw7zZYli7aHuP-mu0zUpY1Byg58x_Dw&usqp=CAU"
+                      alt=""
+                      className="h-6 w-6"
+                    />
+                  </span> */}
+                  Nigeria
+                </option>
+                <option value="Ghana">Ghana</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Morroco">Morroco</option>
+              </select>
+            </div>
+          </div>
+          {/* <div className="inline-flex md:hidden w-[100px]"></div> */}
+          <div className="text-sm">
             <h1 className="uppercase font-semibold">
               Abuja <span> • </span> MTN NG
             </h1>
